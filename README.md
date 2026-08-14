@@ -14,6 +14,7 @@ Each concept is an independent Next.js app in its own subfolder — no shared ro
 | [`addition-explainers`](addition-explainers) | Addition |
 | [`fractions-explainers`](fractions-explainers) | Fractions |
 | [`division-explainers`](division-explainers) | Division |
+| [`multiplication-explainers`](multiplication-explainers) | Multiplication |
 
 ## Guidelines
 
