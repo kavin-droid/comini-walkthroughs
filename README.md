@@ -11,3 +11,5 @@ Each concept is an independent Next.js app in its own subfolder — no shared ro
 | [`skip-counting-explainers`](skip-counting-explainers) | Skip counting |
 | [`rounding-explainers`](rounding-explainers) | Rounding numbers |
 | [`subtraction-explainers`](subtraction-explainers) | Subtraction |
+| [`addition-explainers`](addition-explainers) | Addition |
+| [`fractions-explainers`](fractions-explainers) | Fractions |
