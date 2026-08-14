@@ -1,0 +1,43 @@
+"use client";
+
+import { cn } from "@/lib/utils";
+import { useStage1 } from "./Stage1Context";
+
+/** Pixel-identical copy of subtraction/ModeToggle.tsx, wired to Stage1Context instead of
+ * PlaybackContext - controls must look and behave the same across every stage (round-11 ask), not
+ * just share a visual family. */
+export function Stage1ModeToggle() {
+  const { mode, setMode } = useStage1();
+  const isAuto = mode === "auto";
+
+  return (
+    <button
+      type="button"
+      aria-label="Toggle autoplay"
+      onClick={() => setMode(isAuto ? "manual" : "auto")}
+      className="flex items-center gap-2 bg-transparent border-none cursor-pointer p-0.5 shrink-0"
+    >
+      <span
+        className={cn(
+          "relative block w-[52px] h-[30px] rounded-full border-[1.5px] transition-colors duration-200",
+          isAuto ? "bg-left/15 border-left" : "bg-paper-2 border-line-2",
+        )}
+      >
+        <span
+          className={cn(
+            "absolute top-0.5 left-0.5 w-[23px] h-[23px] rounded-full border flex items-center justify-center text-[11px] transition-all duration-200",
+            isAuto
+              ? "translate-x-[22px] bg-left border-left text-card"
+              : "translate-x-0 bg-card border-line-2 text-ink",
+          )}
+          style={{ transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)" }}
+        >
+          {isAuto ? "❙❙" : "▶"}
+        </span>
+      </span>
+      <span className="hidden min-[900px]:inline-block font-mono text-[12px] font-semibold tracking-wide text-ink-2">
+        {isAuto ? "Autoplay" : "Manual"}
+      </span>
+    </button>
+  );
+}

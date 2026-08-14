@@ -10,3 +10,4 @@ Each concept is an independent Next.js app in its own subfolder — no shared ro
 | [`compare-order-explainers`](compare-order-explainers) | Compare & order numbers |
 | [`skip-counting-explainers`](skip-counting-explainers) | Skip counting |
 | [`rounding-explainers`](rounding-explainers) | Rounding numbers |
+| [`subtraction-explainers`](subtraction-explainers) | Subtraction |
