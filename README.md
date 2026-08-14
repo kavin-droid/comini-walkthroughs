@@ -13,3 +13,9 @@ Each concept is an independent Next.js app in its own subfolder — no shared ro
 | [`subtraction-explainers`](subtraction-explainers) | Subtraction |
 | [`addition-explainers`](addition-explainers) | Addition |
 | [`fractions-explainers`](fractions-explainers) | Fractions |
+| [`division-explainers`](division-explainers) | Division |
+
+## Guidelines
+
+- [`GUIDELINES.md`](GUIDELINES.md) — build guidelines for new concept interactives (page template, structure, etc).
+- [`language-audit.md`](language-audit.md) — kid-word-choice audit spec: vocabulary bar, sentence-level checks, and content fundamentals for how copy is written. Run this against any concept app's copy before shipping.
